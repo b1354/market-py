@@ -1,5 +1,5 @@
 # import module
-from kasir import *
+from module import *
 from inputBarang import main as inputProduk
 
 # Program main()

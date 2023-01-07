@@ -1,5 +1,5 @@
 import json
-from kasir import clear_console, list_barang, cariId
+from module import clear_console, list_barang, cariId
 
 def editMenu():
   print("---masukan barang---")

@@ -23,5 +23,10 @@
     "kode": "10",
     "produk": "ladaku",
     "harga": 5000
+  },
+  {
+    "kode": "6",
+    "produk": "selai olai",
+    "harga": 3000
   }
 ]
