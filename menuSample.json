@@ -1,0 +1,22 @@
+[
+  {
+    "kode": "1",
+    "produk": "mayones",
+    "harga": 1000
+  },
+  {
+    "kode": "2",
+    "produk": "tempe",
+    "harga": 5000
+  },
+  {
+    "kode": "3",
+    "produk": "minyak",
+    "harga": 10000
+  },
+  {
+    "kode": "4",
+    "produk": "nugget",
+    "harga": 12000
+  }
+]
