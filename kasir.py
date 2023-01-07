@@ -34,6 +34,7 @@ def tambahKeTroli(id_barang, jumlah=1):
   troli.append(barang)
 
 def cetakNota():
+  clear_console()
   print("terimakasih telah berbelanja")
   print("-------------")
   print("daftar belanjaan anda:")
