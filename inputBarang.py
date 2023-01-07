@@ -31,7 +31,11 @@ def main():
     clear_console()
     editMenu()
 
-    kode = int(input("Kode: "))
+    kode = int(input("Kode(masukan 0 untuk keluar): "))
+
+    if not kode:
+      break
+
     kode = str(kode)
     produk = str(input("Produk: "))
     harga = int(input("Harga: "))
@@ -46,16 +50,16 @@ def main():
 
     if not write_data :
       print("data gagal di masukan")
-      ulang = str(input("tekan (ENTER) untuk melanjutkan atau (n) untuk keluar"))
+      ulang = str(input("tekan (ENTER) untuk melanjutkan atau (n) untuk keluar: "))
       if (ulang == "n" or ulang == "N"):
         break
       continue
 
-    ulang = str(input("masukan barang lagi?(y, n)"))
+    ulang = str(input("masukan barang lagi?(y, n): "))
 
     if (ulang == "y" or ulang == "Y"):
       continue
     
     break
-
-main()
+if __name__ == "__main__":
+  main()

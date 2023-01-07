@@ -1,5 +1,6 @@
 # import module
 from kasir import *
+from inputBarang import main as inputProduk
 
 # Program main()
 while(True):
@@ -8,14 +9,14 @@ while(True):
 
   if (not input_id_barang):
     break
-  elif (input_id_barang == "editmenu"):
-    masukanBarang()
+  elif (input_id_barang == "inputmenu"):
+    inputProduk()
     continue
   elif (not cariId(input_id_barang)):
     input("kode barang tidak tersedia")
     continue
 
-  input_jumlah = str(input("masukan jumlah barang(jika 1, kosongkan saja)"))
+  input_jumlah = str(input("masukan jumlah barang(jika 1, kosongkan saja): "))
 
   if (not input_jumlah ):
     tambahKeTroli(input_id_barang)
