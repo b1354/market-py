@@ -18,5 +18,10 @@
     "kode": "4",
     "produk": "nugget",
     "harga": 12000
+  },
+  {
+    "kode": "10",
+    "produk": "ladaku",
+    "harga": 5000
   }
 ]

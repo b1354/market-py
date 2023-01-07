@@ -1,15 +1,15 @@
 import json
 from os import system, name
 
+# deklarasi
+list_barang = json.load(open('menu.json'))
+troli = []
+
 def clear_console():
   if name == "nt":
     _ = system("cls")
   else:
     _ = system("clear")
-
-list_barang = json.load(open('menu.json'))
-
-troli = []
 
 def showMenu():
   clear_console()
@@ -52,29 +52,3 @@ def hitungJumlah():
     jumlah+=i["total"]
   
   return jumlah
-
-# Program main()
-while(True):
-  showMenu()
-  input_id_barang = str(input("Masukan ID barang(kosongkan jika sudah tidak ingin membeli): "))
-
-  if (not input_id_barang):
-    break
-
-  elif (not cariId(input_id_barang)):
-    input("kode barang tidak tersedia")
-    continue
-
-  input_jumlah = str(input("masukan jumlah barang(jika 1, kosongkan saja)"))
-
-  if (not input_jumlah ):
-    tambahKeTroli(input_id_barang)
-  else:
-    input_jumlah = int(input_jumlah)
-    tambahKeTroli(input_id_barang, input_jumlah)
-   
-  clear_console()
-
-cetakNota()
-print("jumlah:")
-print("Rp.", hitungJumlah())
